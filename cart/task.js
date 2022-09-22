@@ -7,9 +7,7 @@ function addToCart(event) {
     // const productInCartProducts = cartProducts.filter((element) => {
     //     return element.getAttribute('data-id') === product.getAttribute('data-id')
     // })[0]
-    const productInCartProducts = cartProducts.find((element) => {
-        return element.getAttribute('data-id') === product.getAttribute('data-id')
-    })
+    const productInCartProducts = cartProducts.find(element => element.getAttribute('data-id') === product.getAttribute('data-id'))
 
 
     if (productInCartProducts) {
